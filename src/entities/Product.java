@@ -1,11 +1,15 @@
+
 package entities;
 
-public class Product {
-    private long id;
-    private String name;
-    private String category;
-    private double price;
 
+public class Product {
+    // Attributi della classe Product
+    private long id; // ID del prodotto
+    private String name; // Nome del prodotto
+    private String category; // Categoria del prodotto
+    private double price; // Prezzo del prodotto
+
+    // Costruttore per inizializzare un oggetto Product con i dati forniti
     public Product(long id, String name, String category, double price) {
         this.id = id;
         this.name = name;
@@ -13,6 +17,7 @@ public class Product {
         this.price = price;
     }
 
+    // Metodi getter per ottenere i valori degli attributi
     public long getId() {
         return id;
     }
@@ -29,6 +34,7 @@ public class Product {
         return price;
     }
 
+    // Metodo toString per rappresentare l'oggetto Product come una stringa
     @Override
     public String toString() {
         return "Product{" +
